@@ -68,7 +68,7 @@ const Page6 = () => {
               className="bg-black text-white opacity-70 h-12 md:h-14 w-full md:w-96 border-2 border-slate-100 rounded px-3 md:px-4 py-1 md:py-2"
             />
           </div>
-          <div className="pl-0 md:pl-2 pt-3 md:pt-0">
+          <div className="pl-0 md:pl-2 pt-3 pb-5 md:pt-0">
             <button className="bg-red text-white font-bold py-2 px-4 rounded w-full md:w-56 h-12 md:h-14">
               Get Started
             </button>
