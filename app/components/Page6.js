@@ -53,7 +53,6 @@ const Page6 = () => {
   };
   const handle6 = () => {
     setTab6(!tab6);
-    setTab5(!tab5);
     setTab1(false);
     setTab2(false);
     setTab3(false);
@@ -81,8 +80,8 @@ const Page6 = () => {
           </div>
         </div>
         {tab1 && (
-          <div className="bg-cardGrey text-white px-5 py-2 text-md md:text-2xl display:none transition-all duration-500" style={{ maxHeight: tab1 ? "none" : "0", opacity: tab1 ? 1 : 0 }}>
-            <span className="transition-all duration-400">
+          <div className="bg-cardGrey text-white px-5 py-2 text-md md:text-2xl display:none transition-all duration-500">
+            <span>
               Netflix is a streaming service that offers a wide variety of
               award-winning TV shows, movies, anime, documentaries, and more on
               thousands of internet-connected devices.
