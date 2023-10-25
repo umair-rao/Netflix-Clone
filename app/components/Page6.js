@@ -3,12 +3,12 @@
 import { useState } from "react";
 
 const Page6 = () => {
-  const [tab1, setTab1] = useState(true);
-  const [tab2, setTab2] = useState(true);
-  const [tab3, setTab3] = useState(true);
-  const [tab4, setTab4] = useState(true);
-  const [tab5, setTab5] = useState(true);
-  const [tab6, setTab6] = useState(true);
+  const [tab1, setTab1] = useState(false);
+  const [tab2, setTab2] = useState(false);
+  const [tab3, setTab3] = useState(false);
+  const [tab4, setTab4] = useState(false);
+  const [tab5, setTab5] = useState(false);
+  const [tab6, setTab6] = useState(false);
 
   const handle1 = () => {
     setTab1(!tab1);
@@ -81,8 +81,8 @@ const Page6 = () => {
           </div>
         </div>
         {tab1 && (
-          <div className="bg-cardGrey text-white px-5 py-2 text-md md:text-2xl display:none transition-all duration-500">
-            <span>
+          <div className="bg-cardGrey text-white px-5 py-2 text-md md:text-2xl display:none transition-all duration-500" style={{ maxHeight: tab1 ? "none" : "0", opacity: tab1 ? 1 : 0 }}>
+            <span className="transition-all duration-400">
               Netflix is a streaming service that offers a wide variety of
               award-winning TV shows, movies, anime, documentaries, and more on
               thousands of internet-connected devices.
